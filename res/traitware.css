@@ -1,0 +1,414 @@
+.traitware-login-box p {
+	color: #72777c;
+	font-size: 14px;
+	font-weight: 400;
+}
+.traitware-login-button {
+    color: #fff;
+    background: #0096c5;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 7px 15px !important;
+    border: 1px solid #007aa8;
+        border-bottom-color: rgb(0, 122, 168);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    border-bottom-color: rgb(0, 122, 168);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom: 2px solid #007aa8;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+    margin: 10px 0px 20px 0px !important;
+     width: 100%;
+}
+
+#loginform .traitware-qrcode, .traitware-qrcode {
+	width: 222px;
+	height: 222px;
+	margin: 10px auto;
+	display: block;
+	border: 1px solid #ddd;
+	padding: 23px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	background: #fbfbfb;
+}
+
+#loginform .traitware-qrcode.traitware-qrcode-with-button, .traitware-qrcode.traitware-qrcode-with-button {
+	display: none;
+}
+
+#loginform .traitware-scan-response, .traitware-scan-response {
+	color: #198C0F;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 15px;
+	display:none;
+}
+
+#traitwarerecoveryemail {
+	display: inline-block;
+	margin: 20px 5px 0 5px;
+	text-align:left;
+}
+
+.traitwaremodal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#scantriggererror {
+	padding:30px;
+	font-size:16px;
+	color: #900;
+	text-align: center;
+}
+
+#scanmodalbox {
+	width: 350px;
+	height: 384px;
+}
+#quickusermodalbox {
+	width: 350px;
+}
+
+.traitwaremodalbox{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetraitwaremodalbox;
+	animation-duration: 0.4s
+}
+
+@keyframes animatetraitwaremodalbox {
+	from {top: -300px; opacity: 0}
+	to {top: 0; opacity: 1}
+}
+
+.traitwareboxheader p {
+	margin: 0;
+	padding: 6px 10px;
+	color: #888;
+	font-size: 16px;
+	border-bottom: 1px solid #aaa;
+	background: #efefef;
+}
+
+.traitwareboxclose {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	padding:6px 10px;
+	margin: 0;
+}
+
+#traitware-modal-qrcode {
+	width: 222px;
+	height: 222px;
+	margin: 58px auto 0 auto;
+	display:block;
+}
+
+.traitwareboxclose:hover,
+.traitwareboxclose:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#quickuserform {
+	padding:20px 30px;
+}
+#quickuserform p{
+	font-size:15px;
+}
+.quickuserinput{
+	width: 287px;
+}
+#quickuserform .submit{
+	text-align:right;
+	padding: 0;
+}
+
+.quickuserinputbox {
+	margin-bottom: 20px;
+}
+
+.quickuserleft {
+	float:left;
+	font-size:15px;
+	line-height:30px;
+}
+.quickuserright {
+	float:right;
+}
+.quickuserright select {
+	width: 220px;
+}
+
+#traitware_overlays {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 99999;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+#traitware_overlays.traitware_overlays_showing {
+	display: flex;
+	background: rgba(0,0,0,0.4);
+}
+
+.traitware_overlay {
+	display: none;
+}
+
+.traitware_overlay_showing {
+	display: block;
+}
+
+#traitware_shortcode_overlay, #traitware_activate_overlay, #traitware_usertype_overlay,
+#traitware_errornotice_overlay, #traitware_bulksync_overlay, #traitware_selfregforms_overlay {
+	width: 100%;
+	max-width: 500px;
+	max-height: 500px;
+	background: white;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#traitware_bulksync_checkboxes {
+	margin-top: 1em;
+}
+#traitware_shortcode_buttons, #traitware_bulksync_buttons, #traitware_activate_buttons, #traitware_usertype_buttons,
+#traitware_selfregforms_buttons {
+	margin-top: 1em;
+}
+.jetpack-sso-form-display #loginform > div.traitware-login-box {
+	display: block;
+}
+
+.traitware-form-table {
+	display: none;
+}
+
+.traitware-form-table.active {
+	display: table;
+}
+
+.traitware-form-table thead th {
+	font-size: 1.3em;
+}
+
+input[name="submit"].traitware-hidden-input {
+	display: none;
+}
+
+.traitware_overlay_title {
+	font-weight: bold;
+}
+
+#traitware_form_options label, #traitware_form_options textarea, #traitware_form_options .traitware_textbox {
+	display: block;
+	width: 100%;
+}
+
+#traitware_form_options textarea {
+	resize: none;
+}
+
+#traitware_form_options label {
+	margin-bottom: 10px;
+}
+
+body.wp-admin.post-php.post-type-traitware_form #visibility, body.wp-admin.post-new-php.post-type-traitware_form #visibility {
+	display: none;
+}
+
+.traitware_form_tab_links {
+	margin-bottom: 10px;
+}
+
+.traitware_form_tab_link {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.traitware_form_tab_link.traitware_form_tab_link_active {
+	text-decoration: underline;
+}
+
+.traitware_form_tab_link.traitware_form_tab_link_on::after {
+	color: #008000;
+	content: " (On)";
+}
+
+.traitware_form_tab_link.traitware_form_tab_link_off::after {
+	color: #ff0000;
+	content: " (Off)";
+}
+
+.traitware_form_tab_link.traitware_form_tab_link_external::after {
+	color: #ffa500;
+	content: " (Link)";
+}
+
+.traitware_forms_container, .traitware_protected_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.traitware_forms_authbox, .traitware_protected_authbox {
+	background: #fff;
+	width: 278px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	border: 2px solid #e8e9eb;
+	margin: 20px 0px;
+}
+
+.traitware_forms_inner_authbox, .traitware_protected_inner_authbox {
+	max-width: 200px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.traitware_forms_titletext, .traitware_protected_titletext {
+	padding-top: 30px;
+	font-weight: 600;
+	color: #056bff;
+}
+
+.traitware_forms_welcometext, .traitware_protected_welcometext {
+	padding-bottom: 8px;
+	font-size: 11px;
+	font-weight: 400;
+	color: #888a8a;
+}
+
+.traitware_forms_bottomarea {
+	background: #f4f5f7;
+	padding: 12px 0px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 400;
+	color: #888a8a;
+}
+
+.traitware_forms_bottomarea p {
+	margin-bottom: 0;
+}
+
+.traitware_forms_signup_input, .traitware_forms_optin_input {
+	width: 189px;
+	color: #888a8a;
+	font-size: 11px;
+	background: #fafafa;
+	padding: 1px 0px;
+}
+
+.traitware_forms_signup_input.traitware_forms_signup_input_username, .traitware_forms_optin_input.traitware_forms_optin_input_username {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border: 1px solid #e8e9eb;
+	height: 30px;
+	margin-bottom: -1px;
+}
+
+.traitware_forms_signup_input.traitware_forms_signup_input_email, .traitware_forms_optin_input.traitware_forms_optin_input_password {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border: 1px solid #e8e9eb;
+	height: 30px;
+}
+
+.traitware_forms_signup_input.traitware_forms_signup_input_email.traitware_forms_signup_only_input {
+	border-radius: 4px;
+	border: 1px solid #e8e9eb;
+	height: 30px;
+}
+
+input[type="text"].traitware_forms_signup_input:focus, input[type="text"].traitware_forms_optin_input:focus {
+	border-color: #e8e9eb;
+}
+
+.traitware_forms_button_area {
+	width: 200px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+input[type="submit"].traitware_forms_signup_submit_btn, input[type="submit"].traitware_forms_optin_submit_btn {
+	display: block;
+	background: linear-gradient(to top right, #3b93ff, #0374ff);
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	width: 200px;
+	padding: 10px 0px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+input[type="submit"].traitware_forms_signup_submit_btn:hover, input[type="submit"].traitware_forms_optin_submit_btn:hover {
+	color: #fff;
+}
+
+.traitware_forms_optin, .traitware_forms_login, .traitware_forms_signup {
+	display: none;
+}
+
+.traitware_forms_active {
+	display: block;
+}
+
+.traitware_forms_successmessage {
+	display: none;
+	padding-top: 8px;
+	font-size: 11px;
+	font-weight: 400;
+	color: #888a8a;
+}
+
+.traitware_forms_errormessage {
+	display: none;
+	padding-top: 8px;
+	font-size: 11px;
+	font-weight: 400;
+	color: #ff0000;
+}
+
+.notice a.traitware-admin-notice-button {
+	vertical-align: baseline;
+}
+
+.traitware-review-notice {
+	padding-right: 38px;
+	position: relative;
+}
+
+.traitware-nav .nav-tab.disabled {
+	background: lightgray;
+}
